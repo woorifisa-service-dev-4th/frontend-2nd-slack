@@ -1,4 +1,9 @@
 /* profile */
+profile{
+	box-shadow:
+		rgba(0, 0, 0, 0.05) -10px 0px 24px 10px,
+		rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
 .profile-header {
 	display: flex;
 	justify-content: space-between;
