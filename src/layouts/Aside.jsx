@@ -5,7 +5,7 @@ import '../styles/Aside.module.css';
 const Aside = ({children}) => {
   return (
     <aside className="aside">
-      <p>Aside에 들어갈 컴포넌트들</p>
+      {children}
     </aside>
   )
 }

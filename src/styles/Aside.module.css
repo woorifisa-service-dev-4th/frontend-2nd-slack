@@ -1,3 +1,245 @@
 aside {
+    display: flex; /* Flexbox 사용 */
+    flex-direction: row; /* 가로로 배치 */
     background-color: rgba(115, 71, 119, 1);
+}
+.toolBar {
+    width: 20.83%;
+    background-color: #3a1140;
+}
+
+.tool-bar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none; /* 링크의 기본 밑줄을 제거 */
+    margin-top: 20px;
+    padding: 7px 14px;
+    border-radius: 15px; /* 모서리 둥글게 */
+    transition: background-color 0.3s ease; /* 배경색 변화에 부드러운 효과 추가 */
+}
+
+.icon:hover {
+    background-color: #542a59; /* hover 시 배경색 */
+}
+
+.icon {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 5px;
+    padding : 10px;
+    border-radius: 15px;
+}
+
+.toolBarSpan {
+    color: white;
+    font-size: 12px;
+}
+
+/* ChannelBar 전체 영역 */
+.channelBar {
+    width: 79.16%;
+    height: 100%;
+    background-color: rgba(115, 71, 119, 1);
+}
+
+  /* 상단 선택 및 필터 영역 */
+.upline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.select {
+    background-color: rgba(115, 71, 119, 1);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 8px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.select:hover {
+    background-color: rgb(133, 80, 137);
+}
+
+.select:focus {
+    outline: none;
+}
+
+.uplineRight {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.uplineRight a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 0;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.uplineRight i {
+    font-size: 16px;
+    color: white;
+}
+
+.uplineRight a:hover {
+    background-color: rgb(133, 80, 137);
+}
+
+  /* 구분선 */
+.divider {
+    border: none;
+    border-top: 0.1px solid rgb(83, 47, 85);
+    margin: 0;
+}
+
+  /* 허들 영역 */
+.hurdle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.hurdle:hover {
+    background-color: rgb(133, 80, 137);
+}
+
+  /* 채널 리스트 영역 */
+.channel {
+    margin-left: 0px;
+}
+
+.channelTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-left: 25px;
+}
+
+.channelButton {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgba(115, 71, 119, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.channelButton:hover {
+    background-color: rgb(133, 80, 137);
+}
+
+.triangle {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;
+    position: absolute;
+    top: 50%;
+    right: 4px;
+    transform: translateY(-50%);
+}
+
+.channelButton:hover .triangle {
+    display: block;
+}
+
+.channelList {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 20px;
+    margin-top: 0;
+}
+
+.channelList a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    padding: 5px;
+}
+
+.channelList a:hover {
+    background-color: rgb(133, 80, 137);
+}
+
+  /* 다이렉트 메시지 영역 */
+.message {
+}
+
+.messageTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-left: 25px;
+}
+
+.messageButton {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgba(115, 71, 119, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.messageList {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 20px;
+    margin-top: 0;
+}
+
+.messageList a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    padding: 5px;
+}
+
+.messageList a:hover {
+    background-color: rgb(133, 80, 137);
 }
