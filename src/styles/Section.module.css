@@ -1,5 +1,9 @@
 section {
 	display: flex;
 	justify-content: center;
-	background-color: #3a1140;
+	background-color: white;
+}
+
+profile{
+	width: 50%;
 }
