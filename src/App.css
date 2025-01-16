@@ -10,12 +10,12 @@ body {
     display: flex;
 }
 
-.section {
-	width: 76%;
+section {
+	width: 71.25%;
 	height: 100%;
 }
 
-.aside {
-	width: 24%;
+aside {
+	width: 28.75%;
 	height: 100%;
 }

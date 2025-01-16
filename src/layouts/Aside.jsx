@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/Aside.module.css';
+import '../styles/Aside.module.css';
 
 
 const Aside = ({children}) => {

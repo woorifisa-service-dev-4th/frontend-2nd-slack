@@ -1,12 +1,15 @@
-import React from 'react'
-import '../styles/Section.module.css';
+import { useProfileTabInfo } from '../contexts/ProfileContext';
+import styles from '../styles/Section.module.css';
+import Profile from './Profile';
 
-const Section = ({children}) => {
+const Section = ({ children }) => {
+  const profileTabInfo = useProfileTabInfo();
+
   return (
-    <section className="section">
-      <p>Section에 들어갈 컴포넌트들</p>
+    <section className={styles.section}>
+      { children }
+      {profileTabInfo.open && <Profile />}
     </section>
-  )
-}
-
+  );
+};
 export default Section
