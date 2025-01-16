@@ -8,7 +8,7 @@ import styles from '../styles/Header.module.css';
 
 const Header = ({children}) => {
   return (
-    <header className="className={styles.header}">
+    <header>
         <div className={styles['left-of-search-box']}>
         <i className="fas fa-arrow-left" style={{ marginRight: '5%' }}></i>
         <i className="fas fa-arrow-right" style={{ marginRight: '5%' }}></i>
